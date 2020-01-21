@@ -114,17 +114,10 @@ footer {
 	padding: 10%;
 }
 
-@media screen and (max-width: 800px) {
-    .a {
-      float: none;
-      width: 100%;
-    }
-  }
-
-/* @media (max-width:800px) {
+@media (max-width:800px) {
 	.services-container{
         flex-direction: column;
     }
     .service-box{
         flex: 0 0 100%;
-    } */
+    }

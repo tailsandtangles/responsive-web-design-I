@@ -115,20 +115,35 @@ footer {
 }
 
 @media (max-width:500px) {
-    .nav {
-    overflow: hidden;
-    flex-direction: column;
-    }
-   .nav a {
-    flex: 0 0 100%;
-    float: left;
-    display: block;
+    nav {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	}
+
+	.logo {
+		flex-direction: column;
+		flex-wrap: wrap-reverse;
+		justify-content: center;
+	}
+
+	.header-img-content {
+		visibility: hidden;
+	}
+	
+   nav a {
+		display: flex;
+	   flex-direction: column;
     color: #B0B0B0;
-    text-align: center;
+    align-items: center;
     padding: 14px 16px;
     text-decoration: none;
    }
-    .nav a:hover {
+
+    nav a:hover {
     background-color: #ddd;
     color: black;
+}
+
 }

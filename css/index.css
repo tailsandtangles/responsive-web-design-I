@@ -27,12 +27,12 @@ a {
 	color: #C1C1C1;
 	padding: 1.5rem 0;
 	justify-content: space-between;
-	width: 10%;
+	width: 100%;
 }
 
 .logo-container {
 	text-align: right;
-	width: 40%;
+	width: 100%;
 	align-self: center;
 }
 
@@ -128,8 +128,7 @@ footer {
 	}
 
 	a {
-		display: flex;
-	 /* text-align: center; */
+	 text-align: center;
 	 align-items: center;
 	 text-decoration: none;
 	}
@@ -158,9 +157,30 @@ footer {
 
 	h1{
 		font-size: 290%;
-		display: flex;
-		justify-content: center;
+		
 
+	}
+
+	.header-text{
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.featuresabout .content-section {
+		width: 100%;
+		
+	}
+
+	.featuresabout, .SPV {
+		width: 100%;
+		margin: 2rem 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.SPV .content-section {
+		width: 100%;
 	}
 
 	button{
@@ -169,6 +189,7 @@ footer {
 	
 	.content-section{
 		display:flex;
+		flex-direction: column;
 		flex-wrap: wrap;
 		width: 100%;
 	}
@@ -187,14 +208,10 @@ footer{
 
 @media (max-width:800px) {
 
-	nav {
+	.nav{
+		display: flex;
+	}
 		
-		}
-
-		.header-img-content{
-			display: none;
-		}
-	
 	.header-img-content img{
 		display: none;
 	}
